@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Desafio</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mx-5 my-5 text-center">
+            <img src="./assets/img/conejo-perro-gato.jpg" alt="animales" class="img-fluid">
+            <h2 class="my-3">Consulta Veterinaria</h2>
+        </div>
+        <form class="letras">
+            <div class="form-group">
+                <label for="propietario">Dueño: </label>
+                <input type="text" class="form-control" id="propietario" aria-describedby="textoAyuda">
+               
+            </div>
+            <div class="form-group">
+                <label for="telefono">Numero Telefonico: </label>
+                <input type="text" class="form-control" id="telefono">
+            </div>
+            <div class="form-group">
+                <label for="direccion">Lugar de Residencia: </label>
+                <input type="text" class="form-control" id="direccion">
+            </div>
+            <div class="form-group">
+                <label for="nombreMascota">Nombre de la Mascota: </label>
+                <input type="text" class="form-control" id="nombreMascota">
+            </div>
+            <div class="form-group">
+                <label for="tipo">Tipo</label>
+                <select class="form-control" id="tipo">
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="conejo">Conejo</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="enfermedad">Motivo de la consulta: </label>
+                <input type="text" class="form-control" id="enfermedad">
+            </div>
+            <button type="submit" class="btn btn-primary">Agregar datos</button>
+        </form>
+        <div class="mt-5">
+            <p class="botones">Datos Agregados:</p>
+            <div id="resultado" class="resulta">
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
